@@ -8,6 +8,6 @@ public class Main {
 		Student st=new Student("name",45);
 		StudentService sv=new StudentService();
 		sv.nameValidation(st);
-		
+		System.out.println(sv.loginName(st));
 	}
 }

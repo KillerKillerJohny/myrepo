@@ -16,4 +16,8 @@ public class StudentService {
 		}
 		return true;
 	}
+	
+	public String loginName(Student s) {
+		return s.studentName.substring(0,4)+s.studentId;
+	}
 }

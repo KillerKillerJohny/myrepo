@@ -1,9 +1,9 @@
 package model;
 
 public class Student {
-	String studentId;
-	String studentName;
-	int creditPoints;
+	public String studentId;
+	public String studentName;
+	public int creditPoints;
 	private static String idCount="101";
 	public Student(String name,int credit) {
 		if(name==null)
@@ -17,20 +17,6 @@ public class Student {
 		id++;
 		this.studentId=id.toString();
 		
-	}
-	
-	public boolean nameValidation(String s) {
-		if(s.length()<4)
-			return false;
-		for(int i=0;i<s.length();i++) {
-			 if (!Character.isDigit(s.charAt(i))
-		                && !Character.isLetter(s.charAt(i))
-		                && !Character.isWhitespace(s.charAt(i))) {
-				 return false;
-			 }
-		}
-		
-		return true;
 	}
 	
 }
